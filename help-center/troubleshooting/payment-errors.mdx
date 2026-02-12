@@ -1,0 +1,25 @@
+---
+title: Payment Callback Not Received
+description: Fix when payment callbacks are not received in Vandar.
+---
+
+## Symptoms
+- Payment succeeds but callback not triggered
+- No update on your server
+
+## Causes
+- Wrong callback URL
+- Server unavailable
+
+## Quick Fix
+<Steps>
+  <Step title="Check callback URL">
+    Ensure the callback URL set in Vandar matches your server address.
+  </Step>
+  <Step title="Test server endpoint">
+    ````bash
+    curl -X POST https://your-domain.com/vandar-callback
+    ````
+    Make sure you get 200 OK response from your server.
+  </Step>
+</Steps>

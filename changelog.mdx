@@ -1,0 +1,116 @@
+---
+title: Changelog
+description: Track the latest updates and improvements to the Vandar platform.
+---
+
+## Recent Updates
+
+Stay informed about the latest changes to Vandar. We release updates regularly to enhance product listings, improve performance, and add new features for sellers and buyers.
+
+<Callout kind="info">
+  Subscribe to our newsletter or follow us on social media to get notifications about major releases.
+</Callout>
+
+<Columns cols={3}>
+  <Card title="Latest" icon="zap" href="#v1-2-0">
+    v1.2.0 - Enhanced listings
+  </Card>
+  <Card title="Previous" icon="package" href="#v1-1-0">
+    v1.1.0 - Performance boosts
+  </Card>
+  <Card title="Initial" icon="rocket" href="#v1-0-0">
+    v1.0.0 - Platform launch
+  </Card>
+</Columns>
+
+<Update label="2024-10-15" description="v1.2.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Added support for bulk product uploads with CSV import for faster listing management.
+- Introduced automated delivery notifications for digital game accounts.
+
+## Improvements
+
+- Optimized product search to handle Arabic and English queries seamlessly.
+- Enhanced checkout flow with one-click purchase for returning customers.
+
+## Bug Fixes
+
+- Fixed pricing display issues on high-traffic product pages.
+- Resolved cart persistence problems during session timeouts.
+
+</Update>
+
+<Update label="2024-09-20" description="v1.1.0" tags={["bugfix", "improvement"]}>
+
+## Improvements
+
+- Upgraded payment gateway integration for faster transaction processing.
+- Improved mobile responsiveness for product galleries and bestseller sections.
+
+## Bug Fixes
+
+- Corrected inventory sync errors for shared accounts.
+- Patched security vulnerability in user session management.
+
+## Policy Changes
+
+- Updated refund policy to include 48-hour window for digital delivery disputes.
+
+</Update>
+
+<Update label="2024-08-10" description="v1.0.0" tags={["feature", "breaking"]}>
+
+## New Features
+
+- Launched core e-commerce platform with Steam account sales.
+- Integrated bestseller carousel for top PC games like Elden Ring and EA Sports FC.
+
+## Breaking Changes
+
+- Migrated to new database schema - update your integrations accordingly.
+
+## Initial Setup
+
+- Basic seller dashboard for listing management.
+- Buyer accounts with order history tracking.
+
+</Update>
+
+## Upcoming Features
+
+<Expandable title="Planned for v1.3.0" default-open="true">
+
+We're working on the following enhancements:
+
+- Multi-language support expansion including full RTL for Arabic.
+- API endpoints for third-party integrations (`https://api.vandarstore.com`).
+- Advanced analytics dashboard for sellers.
+
+Follow our [GitHub repository](https://github.com/vandar) for progress updates.
+
+</Expandable>
+
+## How to Upgrade
+
+<Tabs>
+  <Tab title="Sellers" icon="package">
+    ```bash
+    # Update your seller dashboard
+    npm update vandar-seller-sdk@latest
+    ```
+    Restart your integration and clear cache.
+  </Tab>
+  <Tab title="Buyers" icon="shopping-cart">
+    No action required - updates deploy automatically.
+  </Tab>
+</Tabs>
+
+<Callout kind="tip">
+  Always test updates in a staging environment before production.
+</Callout>
+
+## Stay Updated
+
+Check this page regularly or set up webhooks to `https://your-webhook-url.com/webhook` for automated notifications on new releases.

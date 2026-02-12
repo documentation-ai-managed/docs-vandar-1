@@ -1,0 +1,169 @@
+---
+title: Troubleshooting Common Issues
+description: Resolve frequent problems encountered while shopping or activating products on Vandar.
+---
+
+## Quick Resolution Checklist
+
+Follow these steps to resolve most issues quickly.
+
+<Steps>
+  <Step title="Check Order Status" icon="search">
+    Log in to your Vandar account at `https://vandarstore.com` and navigate to **My Orders**.
+    
+    Verify if the order shows as **Processing**, **Delivered**, or **Failed**.
+  </Step>
+  <Step title="Review Email Inbox" icon="mail">
+    Search your email (including spam) for confirmations from `no-reply@vandarstore.com`.
+    
+    Look for order receipts or activation details.
+  </Step>
+  <Step title="Clear Browser Cache" icon="refresh-cw">
+    Clear your browser cache and cookies, then retry the action.
+    
+    Common for activation errors.
+  </Step>
+  <Step title="Contact Support" icon="headphones">
+    If unresolved, use the support options below.
+  </Step>
+</Steps>
+
+<Callout kind="tip">
+  Most issues resolve within 5 minutes by checking your order status and email first.
+</Callout>
+
+## Common Error Messages
+
+| Error Code | Description | Likely Cause |
+|------------|-------------|--------------|
+| `PAY-001` | Payment failed | Card declined or insufficient funds |
+| `ACT-404` | Invalid activation code | Code already used or expired |
+| `ACC-LOCK` | Account access denied | Multiple failed login attempts |
+| `DEL-024` | Delivery delayed | High order volume during peak hours |
+
+## Payment and Order Issues
+
+<ExpandableGroup>
+  <Expandable title="Failed Payment or Missing Confirmation" default-open="true">
+    Payments can fail due to bank restrictions or network issues.
+    
+    <Steps>
+      <Step title="Verify Payment" icon="credit-card">
+        Check your bank statement for a charge from Vandar.
+        
+        If charged but no confirmation, proceed to next step.
+      </Step>
+      <Step title="Resubmit Order" icon="shopping-cart">
+        Place the order again using a different payment method.
+        
+        ```bash
+        # Example: Switch from card to alternative
+        Use Apple Pay or bank transfer if available
+        ```
+      </Step>
+      <Step title="Request Refund" icon="arrow-left">
+        Email `support@vandarstore.com` with order ID and transaction proof.
+      </Step>
+    </Steps>
+
+    <Callout kind="alert">
+      Do not resubmit the same order multiple times to avoid duplicate charges.
+    </Callout>
+  </Expandable>
+
+  <Expandable title="Order Not Delivered After Payment">
+    Orders process within 1-30 minutes.
+    
+    Wait 30 minutes, then:
+    
+    1. Check **My Orders** page.
+    2. Verify spam folder.
+    3. Contact support with order ID.
+  </Expandable>
+</ExpandableGroup>
+
+## Activation Code Errors
+
+Game accounts require activation via Steam or platform login.
+
+<Tabs>
+  <Tab title="Steam Activation" icon="monitor">
+    <Steps>
+      <Step title="Copy Account Details" icon="copy">
+        From your order email, copy the Steam login credentials exactly.
+      </Step>
+      <Step title="Log In to Steam" icon="log-in">
+        Open Steam > Log in with provided credentials.
+        
+        If `Account locked`, wait 15 minutes or reset via Steam support.
+      </Step>
+      <Step title="Change Password" icon="key">
+        Immediately change password and enable 2FA.
+        
+        ```javascript
+        // Example Steam login flow (conceptual)
+        steamClient.login({
+          username: 'provided-username',
+          password: 'provided-password'
+        });
+        ```
+      </Step>
+    </Steps>
+  </Tab>
+  <Tab title="Invalid Code Error" icon="alert-triangle">
+    Codes are single-use.
+    
+    - Verify code format: `XXXXX-XXXXX-XXXXX`
+    - Ensure no extra spaces.
+    - If expired, request replacement via support.
+  </Tab>
+</Tabs>
+
+## Account Access Recovery
+
+Lost access to purchased accounts?
+
+<Expandable title="Recover Shared Account" default-open="false">
+  Vandar provides shared Steam accounts.
+  
+  <Steps>
+    <Step title="Use Recovery Email" icon="mail">
+      Check order email for recovery instructions.
+    </Step>
+    <Step title="Steam Password Reset" icon="refresh-cw">
+      Go to `https://store.steampowered.com/login/` > **Forgot Password**.
+      
+      Use the account's recovery email if provided.
+    </Step>
+    <Step title="Contact Vandar Support" icon="headphones">
+      Provide order ID for manual reset.
+    </Step>
+  </Steps>
+</Expandable>
+
+<Callout kind="warning">
+  Never share account credentials publicly. Use only for personal gaming.
+</Callout>
+
+## Delivery Delays and Support
+
+For delays beyond 30 minutes:
+
+<Columns cols={2}>
+  <Card title="Live Chat" icon="message-circle" href="https://vandarstore.com/support/chat" target="_blank">
+    Available 24/7 for instant help.
+  </Card>
+  <Card title="Email Support" icon="mail" href="mailto:support@vandarstore.com">
+    Include order ID, product name, and screenshots.
+  </Card>
+  <Card title="FAQ" icon="help-circle" href="/faq">
+    Self-service answers to common questions.
+  </Card>
+  <Card title="Discord" icon="users" href="https://discord.gg/vandar" target="_blank">
+    Community support channel.
+  </Card>
+</Columns>
+
+<Callout kind="success">
+  95% of issues resolved within 1 hour. Provide your order ID for fastest resolution.
+</Callout>

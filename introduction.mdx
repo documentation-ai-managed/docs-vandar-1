@@ -1,0 +1,150 @@
+---
+title: Introduction to Vandar
+description: Discover Vandar, an e-commerce platform specializing in digital PC games, shared accounts, and software activation keys with instant delivery options.
+---
+
+<Callout kind="info" title="Starter Kit Template">
+  This documentation was generated as a starter kit template based on your brand. Please review and customize the content to accurately reflect your product's features, APIs, and capabilities.
+</Callout>
+
+## Overview
+
+Vandar provides a seamless e-commerce experience for digital PC games, shared accounts, and software activation keys. You get instant delivery, competitive pricing, and secure transactions. Focus on popular titles like Elden Ring, ARK Survival Evolved, and EA Sports FC series.
+
+## Key Features
+
+<Columns cols={3}>
+
+<Card title="Instant Delivery" icon="zap" href="#quick-start">
+
+  Receive your digital products immediately after purchase. No waiting for shipping.
+
+</Card>
+
+<Card title="Wide Selection" icon="package" href="/categories/games">
+
+  Explore top PC games, shared Steam accounts, and Windows activation keys.
+
+</Card>
+
+<Card title="Great Discounts" icon="percent" href="/categories/deals">
+
+  Enjoy up to 70% off on best-sellers with frequent promotions.
+
+</Card>
+
+</Columns>
+
+## Available Categories
+
+<Tabs>
+
+<Tab title="PC Games" icon="gamepad2">
+
+  Full titles and DLCs for Steam, Epic Games, and more.
+
+  - Elden Ring: Shadow of the Erdtree
+
+  - Ghost of Tsushima Director's Cut
+
+  - EA Sports FC 26 Ultimate and Standard
+
+</Tab>
+
+<Tab title="Shared Accounts" icon="users">
+
+  Access premium games via shared accounts.
+
+  - Online Steam accounts
+
+  - Multiplayer ready
+
+</Tab>
+
+<Tab title="Software Keys" icon="key">
+
+  Activation keys for Windows and other software.
+
+  - Instant activation
+
+  - Lifetime validity
+
+</Tab>
+
+</Tabs>
+
+## Quick Start
+
+Get started with your first purchase in minutes.
+
+<Steps>
+
+<Step title="Create Account" icon="user-plus">
+
+  Visit `https://vandarstore.com` and sign up with your email.
+
+</Step>
+
+<Step title="Browse Products" icon="search">
+
+  Use the search bar or check best-sellers section for deals.
+
+</Step>
+
+<Step title="Add to Cart" icon="shopping-cart">
+
+  Select your game or key and click "أضف للسلة" (Add to Cart).
+
+</Step>
+
+<Step title="Checkout" icon="credit-card">
+
+  Complete payment for instant delivery details.
+
+</Step>
+
+</Steps>
+
+<CodeGroup tabs="JavaScript,Python">
+
+```javascript
+// Example: Fetch product details (if using storefront API)
+fetch('https://api.example.com/products/oZOaygl')
+  .then(response => response.json())
+  .then(data => console.log(data.price)); // Logs current price
+```
+
+```python
+# Example: Check product availability
+import requests
+response = requests.get('https://api.example.com/products/oZOaygl')
+print(response.json()['price'])  # Current price
+```
+
+</CodeGroup>
+
+## Next Steps
+
+<Card title="Quickstart Guide" icon="book-open" href="/quickstart">
+
+  Detailed walkthrough for your first order.
+
+</Card>
+
+<Card title="Help Center" icon="help-circle" href="/help-center">
+
+  FAQs and support articles.
+
+</Card>
+
+<Card title="Authentication" icon="shield" href="/authentication">
+
+  Secure account setup and login.
+
+</Card>
+
+<Callout kind="tip">
+
+  Start with the Quickstart Guide to place your first order. Customize these docs to match your exact workflows.
+
+</Callout>
